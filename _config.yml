@@ -1,10 +1,8 @@
 plugins:
   - jekyll-paginate
 
-title: Sweet 16
-description:
-    <a href="https://wordpress.org/themes/twentysixteen/" rel="external">Wordpress 2016 theme</a>
-    in <a href="https://jekyllrb.com/" rel="external">Jekyll</a>
+title: Patti SUN
+description: 照片、流水账、备忘录、一点点评论、不完整的草稿和引用的大杂烩
 
 paginate: 10
 paginate_path: /page/:num/
