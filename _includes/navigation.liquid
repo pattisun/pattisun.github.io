@@ -1,9 +1,13 @@
-<h3>CATEGORIES</h3>
-<ul>
-  {% for category in site.categories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <li>
-      <a href="/category/#{{ category_name | slugify }}">{{ category_name }}</a>
-    </td>
-  {% endfor %}
-</ul>
+<nav class="menu">
+  {% if site.data.menu %}
+    {% include menu.liquid list=site.data.menu %}
+  {% endif %}
+</nav>
+
+<nav class="social">
+  {% if site.data.social %}
+    {% for link in site.data.social %}
+      <a href="{{ link | replace_first: '/', '%%/' | replace: '%%//', '//' | replace: '%%', site.baseurl }}"></a>
+    {% endfor %}
+  {% endif %}
+</nav>
